@@ -1,5 +1,4 @@
 FROM node:8.1.3
-RUN yum update \    && yum install -y nginx
 WORKDIR /app
 COPY . /app/
 EXPOSE 80
