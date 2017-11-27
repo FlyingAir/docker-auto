@@ -3,5 +3,5 @@ WORKDIR /usr/share/nginx/app
 COPY . /usr/share/nginx/app/
 EXPOSE 80
 RUN  yarn install && npm run build
-CMD ["nginx","-g","daemon off;"]
+
 
