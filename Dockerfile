@@ -8,6 +8,6 @@ EXPOSE 80
 RUN  yarn install && npm run build \
     && pwd \
     && cp -r dist/* /usr/share/nginx/html/ \
-    && rm -rf /usr/share/nginx/app/
+    && rm -rf /app
 CMD ["nginx","-g","daemon off;"]
 
